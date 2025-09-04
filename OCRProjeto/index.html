@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=upload" />
+    <link rel="stylesheet" href="style.css">
+    <title>RevisaTCC</title>
+</head>
+<body>
+
+    <!--Logo e Login------------------------------------------------------------------------------------------------->
+    <header class="logo-login">
+
+        <a href="#"><img src="img/RevisaTCC1.PNG" alt=""></a>
+        
+        <div class="login">
+            <a href="#">Fazer login</a>
+            <a href="#" class="registre">Registre-se</a>  
+        </div>              
+    </header>
+
+    <!--Descrição-------------------------------------------------------------------------------------------------->
+    <div class="container">
+      <div class="descricao">
+        <section>
+          <video controls width="640" height="360">
+            <source src="video/RevisaTCC.mp4" type="video/mp4">
+          </video>
+        </section>
+      </div>
+    </div>
+    
+    <!--Corpo de upload---------------------------------------------------------------------------------------------->
+    <div class="centralizar">
+        <main class="principal-upload">
+
+          <div class="container-upload">
+            <form action="/upload" method="POST" enctype="multipart/form-data">
+              <label for="arquivo" class="custom-file-upload">
+                <span class="material-symbols-outlined">upload</span>
+              </label>
+              <input type="file" id="arquivo" name="arquivo" accept=".pdf,.doc,.docx" required>
+              <button type="submit" class="enviar">Analisar</button>
+            </form>
+          </div>
+      
+          <aside class="instrucoes">
+
+            <div>
+              <a href="#"><img src="icons/grama.png" alt=""></a>
+              <a href="#"><img src="icons/abnt.png" alt=""></a>
+              <a href="#"><img src="icons/detecta.png" alt=""></a>
+              <a href="#"><img src="icons/scholar.png" alt=""></a>
+            </div>
+
+            <img src="icons/informa.PNG" alt="">
+          </aside>
+
+        </main>
+      </div>
+
+    <!--Rodapé------------------------------------------------------------------------------------------------------>
+    <footer class="rodape">
+        <a href="#"><img src="img/RevisaTCC1.PNG" alt=""></a>
+
+        <div class="sociais"></div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

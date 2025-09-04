@@ -1,0 +1,182 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #ffffff;
+  background-image: linear-gradient(to bottom, #d4d1d1, #ffffff);
+}
+
+/*Logo e Login -------------------------------------------------------------*/
+.logo-login {
+  display: flex;
+  justify-content: space-around;
+  background-color: #ffffff;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo-login a img {
+  width: 200px;
+}
+
+.logo-login .login a {
+  text-decoration: none;
+  margin: 15px;
+  padding: 10px;
+  color: black;
+  transition: 0.3s;
+}
+
+.registre {
+  background-color: #bbbbbb63;
+  border: 1px solid #bbbbbb63;
+  height: 2px;
+  width: 5px;
+  border-radius: 20px;
+}
+
+.registre:hover {
+  background-color: #c5c4c4;
+}
+
+/*Descrição----------------------------------------------------------------------------*/
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh; /* Ocupa toda a altura da janela */
+}
+
+.descricao {
+  display: flex;
+  justify-content: left;
+  height: 20vw; /* Ajuste conforme necessário */
+  width: 70vw;
+  background-color: #ffffff; /* Opcional, para visualização */
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.descricao section h1 {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+
+/*Corpo de upload --------------------------------------------------------------*/
+.centralizar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.principal-upload {
+  display: flex;
+  gap: 10px;
+}
+
+.principal-upload form {
+  background-color: #ffffff;
+  width: 30vw;
+  height: 20vw;
+  border-radius: 10px;
+  display: flex; /* Para centralizar o conteúdo do formulário */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Espaço entre elementos */
+}
+
+.instrucoes {
+  background-color: #ffffff;
+  width: 30vw;
+  height: 20vw;
+  border-radius: 10px;
+  padding: 15px;
+  box-sizing: border-box; /* Evita que padding aumente o tamanho */
+  display: flex; /* Transforma o aside em um contêiner flex */
+}
+
+.instrucoes div {
+  margin-top: 0.5vw;
+}
+
+.instrucoes div a img {
+  width: 4vw;
+  height: 4vw;
+  pad: 5px;
+}
+
+.instrucoes div a img:hover {
+  animation: pulsar 0.6s ease-in-out infinite;
+}
+
+@keyframes pulsar {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+/* Estilo do ícone -----------------------------------------------------------------------*/
+.material-symbols-outlined {
+font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24;
+color: #333;
+font-size: 24px;
+}
+
+/* Esconder o input nativo */
+input[type="file"] {
+  display: none;
+}
+
+/* Estilizar o label como botão de upload */
+.custom-file-upload {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 15px;
+  background: linear-gradient(to right, #f0e6e6, #ffffff); /* Gradiente dos blocos */
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.custom-file-upload:hover {
+  background: linear-gradient(to right, #868383, #b8acac);
+}
+
+/* Estilo do botão Enviar */
+.enviar {
+  padding: 10px 20px;
+  background-color: #32c00f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.enviar:hover {
+  background-color: #555;
+}
+
+/*Rodapé -----------------------------------------------------------------------*/
+.rodape {
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffffff;
+    align-items: center;
+    padding: 20px;
+}
+
+.rodape a img {
+    width: 200px;
+}

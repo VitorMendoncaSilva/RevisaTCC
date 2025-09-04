@@ -1,0 +1,125 @@
+/* Reset e Estilos Básicos */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  background-image: linear-gradient(to bottom, #d4d1d1, #ffffff);
+  font-family: Arial, sans-serif;
+}
+
+/* Layout Principal com Flexbox */
+.pagina {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Cabeçalho */
+.logo-login2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.logo-login2 a img {
+  width: 200px;
+}
+
+.logo-login2 .login a {
+  text-decoration: none;
+  margin: 15px;
+  padding: 10px;
+  color: black;
+  transition: 0.3s;
+}
+
+/* Conteúdo Principal */
+.container {
+  flex: 1;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.registre {
+  background-color: #bbbbbb63;
+  border: 1px solid #bbbbbb63;
+  height: 2px;
+  width: 5px;
+  border-radius: 20px;
+}
+
+.registre:hover {
+  background-color: #c5c4c4;
+}
+
+/*Cabecalho-------------------------------------------------------------------*/
+
+.cabecalho h1 {
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.resumo, .conteudo-aba {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.abas {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.aba {
+  padding: 8px 16px;
+  background: #eee;
+  border: none;
+  cursor: pointer;
+}
+
+.aba.ativa {
+  background: #ddd;
+  font-weight: bold;
+}
+
+.acoes {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.botao-relatorio,
+.botao-aplicar {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.botao-aplicar {
+  background-color: #28a745;
+}
+
+/* Rodapé */
+.rodape2 {
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+.rodape2 a img {
+  width: 200px;
+}
+
+  
